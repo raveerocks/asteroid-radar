@@ -3,7 +3,6 @@ package io.raveerocks.asteroidradar.ui.models
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
-
 @Parcelize
 data class Picture(
     val copyright: String = "",
