@@ -19,7 +19,8 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="io.raveerocks.asteroidradar.ui.fragments.DetailFragment">
+        android:name="io.raveerocks.asteroidradar.ui.fragments.DetailFragment"
+        tools:layout="@layout/fragment_detail">
         <argument
             android:name="asteroid"
             app:argType="io.raveerocks.asteroidradar.ui.models.Asteroid" />

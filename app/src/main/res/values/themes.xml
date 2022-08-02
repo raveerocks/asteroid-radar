@@ -11,7 +11,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:fontFamily">@font/bebas_neue</item>
+        <item name="fontFamily">@font/bebas_neue</item>
     </style>
 
 
