@@ -3,7 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-night/asteroid_hazardous.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable-night/asteroid_safe.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable-night/ic_help_circle.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable-night/ic_status_normal.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable-night/ic_status_potentially_hazardous.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/asteroid_hazardous.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/asteroid_safe.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/ic_broken_image.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/ic_help_circle.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/ic_status_normal.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/ic_status_potentially_hazardous.xml" value="0.138" />
+        <entry key="app/src/main/res/drawable/loading_img.xml" value="0.138" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1743659420289855" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.138" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.138" />
       </map>
     </option>
   </component>
