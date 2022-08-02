@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="asteroid"
+            type="io.raveerocks.asteroidradar.ui.models.Asteroid" />
+
+        <variable
+            name="clickListener"
+            type="io.raveerocks.asteroidradar.ui.adapters.AsteroidAdapter.AsteroidItemClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_container"
+        android:onClick="@{()->clickListener.onClick(asteroid)}"
+        style="@style/style_item_container">
+
+        <TextView
+            android:id="@+id/name_text"
+            style="@style/style_item_field_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:contentDescription="@{`Asteroid `+asteroid.name+`.`}"
+            android:focusable="false"
+            android:text="@{asteroid.name}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/date_text"
+            style="@style/style_item_field_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:contentDescription="@{`Nearest to earth on `+asteroid.date}"
+            android:focusable="false"
+            android:text="@{asteroid.date}"
+            app:layout_constraintStart_toStartOf="@+id/name_text"
+            app:layout_constraintTop_toBottomOf="@+id/name_text"
+            tools:text="Date" />
+
+        <ImageView
+            android:id="@+id/type_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:contentDescription="@string/potentially_hazardous_asteroid_image"
+            android:focusable="false"
+            app:isPotentiallyHazardousAsteroid="@{asteroid.potentiallyHazardousAsteroid}"
+            app:layout_constraintBottom_toBottomOf="@+id/date_text"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
