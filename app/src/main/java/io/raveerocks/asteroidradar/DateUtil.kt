@@ -19,4 +19,13 @@ object DateUtil {
         calendar.add(Calendar.DAY_OF_YEAR, offset)
         return dateFormat.format(calendar.time)
     }
+
+    fun getDateList(from: String, offset: Int): List<String> {
+        val calendar = Calendar.getInstance()
+        calendar.time = dateFormat.parse(from)!!
+        return listOf(0..offset).flatten().map {
+            calendar.add(Calendar.DAY_OF_YEAR, it)
+            dateFormat.format(calendar.time)
+        }
+    }
 }
